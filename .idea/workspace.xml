@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="23e044be-437f-4633-9202-14eb2eec9003" name="Default Changelist" comment="" />
+    <list default="true" id="23e044be-437f-4633-9202-14eb2eec9003" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jf0iX4U3q8pf59b5ujjCOrctqx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,7 +37,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/components/TaskColumn/ButtonAddCard" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -31,11 +54,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604179966874</updated>
-      <workItem from="1604179969412" duration="79000" />
+      <workItem from="1604179969412" duration="13214000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="313" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604197529659">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="488" y="313" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1257@0.23.2048.1257" timestamp="1604197529659" />
+    <state x="669" y="240" width="858" height="822" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604183629851">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="669" y="240" width="858" height="822" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.2048.1257@0.23.2048.1257" timestamp="1604183629851" />
+    <state x="762" y="405" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604186367663">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="762" y="405" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1257@0.23.2048.1257" timestamp="1604186367663" />
+    <state x="525" y="290" key="SettingsEditor" timestamp="1604191224019">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="525" y="290" key="SettingsEditor/0.23.2048.1257@0.23.2048.1257" timestamp="1604191224019" />
+    <state x="624" y="387" key="Vcs.Push.Dialog.v2" timestamp="1604192617228">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="624" y="387" key="Vcs.Push.Dialog.v2/0.23.2048.1257@0.23.2048.1257" timestamp="1604192617228" />
   </component>
 </project>
