@@ -4,14 +4,14 @@ from .models import Namespace, TaskLabel, Task
 from django.db.models import Model
 from rest_framework import routers, serializers, viewsets
 
-BASE_MODEL_FIELDS = ['author', 'namespace', 'creation_date']
+BASE_MODEL_FIELDS = ["author", "namespace", "creation_date"]
 
 # * ----- USERS ----- *
 # Serializers define the API representation.
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
          model = User
-         fields = ['url', 'username', 'email', 'is_staff']
+         fields = "__all__"
 
 # ViewSets define the view behavior.
 class UserViewSet(viewsets.ModelViewSet):
@@ -23,7 +23,7 @@ class UserViewSet(viewsets.ModelViewSet):
 class NamespacesSerializer(serializers.ModelSerializer):
     class Meta:
          model = Namespace
-         fields = ['author', 'color', 'title', 'creation_date', 'users_access']
+         fields = ["title", "author", "color", "creation_date", "user_access"]
 
 # ViewSets define the view behavior.
 class NamespacesViewSet(viewsets.ModelViewSet):
@@ -35,8 +35,7 @@ class NamespacesViewSet(viewsets.ModelViewSet):
 class TaskLabelSerializer(serializers.ModelSerializer):
     class Meta:
          model = TaskLabel
-         task_label_fields = ['title', 'color', 'image', 'namespace']
-         fields = BASE_MODEL_FIELDS.extend(task_label_fields)
+         fields = "__all__"
 
 # ViewSets define the view behavior.
 class TaskLabelViewSet(viewsets.ModelViewSet):
@@ -47,8 +46,8 @@ class TaskLabelViewSet(viewsets.ModelViewSet):
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
          model = Task
-         task_fields = ['title', 'description', 'labels', 'priority', 'assignees', 'state', 'deadline', 'attachment']
-         fields = BASE_MODEL_FIELDS.extend(task_fields)
+         fields = "__all__"
+
 
 # ViewSets define the view behavior.
 class TaskViewSet(viewsets.ModelViewSet):

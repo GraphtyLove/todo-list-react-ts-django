@@ -1,6 +1,7 @@
 from djongo import models
 from django.contrib.auth.models import User
 
+
 class Namespace(models.Model):
     """
     This model define user's namespaces.
@@ -10,7 +11,6 @@ class Namespace(models.Model):
         on_delete=models.CASCADE,
         # Tell which property of User should be shown and selected.
         # If not there, it will cause issues. The field should has "unique=True".
-#         to_field="username",
         related_name='Namespace_author'
     )
     color = models.CharField(max_length=200)
@@ -34,20 +34,19 @@ class BaseModelTodo(models.Model):
         on_delete=models.CASCADE,
         # Tell which property of User should be shown and selected.
         # If not there, it will cause issues. The field should has "unique=True".
-        to_field="username",
         related_name="author"
     )
 
-    namespace = models.ForeignKey(
+    namespace = models.ArrayReferenceField(
         to=Namespace,
         on_delete=models.CASCADE,
         # Tell which property of User should be shown and selected.
         # If not there, it will cause issues. The field should has "unique=True".
-        to_field="title",
         related_name="namespace"
     )
     # Date where it has been created.
     creation_date = models.DateTimeField(auto_now_add=True)
+
 
 # * ----- todo list ----- *
 class TaskLabel(models.Model):
@@ -56,31 +55,30 @@ class TaskLabel(models.Model):
     """
     title = models.CharField(max_length=100)
     color = models.CharField(max_length=6)
-    image = models.CharField(max_length=150)
     namespace = models.ArrayReferenceField(
         to=Namespace,
         on_delete=models.CASCADE,
         # Tell which property of User should be shown and selected.
         # If not there, it will cause issues. The field should has "unique=True".
-        to_field="title",
         related_name="Label_namespace"
     )
     def __str__(self):
         return self.title
 
-# Tasks
+
 class Task(BaseModelTodo):
     """
     This model define to-do's task.
     """
     title = models.CharField(max_length=100)
     description = models.TextField(max_length=10000)
-    labels = models.ArrayReferenceField(to=TaskLabel, on_delete=models.CASCADE)
-    priority = models.CharField(max_length=200)
+    labels = models.ArrayReferenceField(to=TaskLabel, on_delete=models.CASCADE, blank=True)
+    priority = models.CharField(max_length=200, default="normal")
     assignees = models.ArrayReferenceField(to=User, on_delete=models.CASCADE)
-    state = models.CharField(max_length=100)
-    deadline = models.DateField()
-    attachment = models.CharField(max_length=200)
+    state = models.CharField(max_length=100, default="Backlog")
+    deadline = models.DateField(blank=True)
+    attachment = models.CharField(max_length=200, blank=True)
     # TODO: Add comment system
+
     def __str__(self):
         return self.title
