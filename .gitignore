@@ -1,3 +1,4 @@
 env
 .DS_store
 .idea
+__pycache__

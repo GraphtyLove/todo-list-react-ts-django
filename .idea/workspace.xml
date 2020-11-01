@@ -12,8 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="23e044be-437f-4633-9202-14eb2eec9003" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskColumn/TaskColumn.sass" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskColumn/TaskColumn.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskItem/TaskItem.sass" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskItem/TaskItem.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,17 +37,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/apps" />
       <recent name="$PROJECT_DIR$/frontend/src/components/TaskColumn/ButtonAddCard" />
     </key>
   </component>
@@ -54,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604179966874</updated>
-      <workItem from="1604179969412" duration="13363000" />
+      <workItem from="1604179969412" duration="20091000" />
     </task>
     <servers />
   </component>
@@ -85,13 +92,17 @@
       <screen x="0" y="23" width="2048" height="1257" />
     </state>
     <state x="762" y="405" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1257@0.23.2048.1257" timestamp="1604186367663" />
-    <state x="525" y="290" key="SettingsEditor" timestamp="1604191224019">
+    <state x="525" y="290" key="SettingsEditor" timestamp="1604242453627">
       <screen x="0" y="23" width="2048" height="1257" />
     </state>
-    <state x="525" y="290" key="SettingsEditor/0.23.2048.1257@0.23.2048.1257" timestamp="1604191224019" />
+    <state x="525" y="290" key="SettingsEditor/0.23.2048.1257@0.23.2048.1257" timestamp="1604242453627" />
     <state x="624" y="387" key="Vcs.Push.Dialog.v2" timestamp="1604192617228">
       <screen x="0" y="23" width="2048" height="1257" />
     </state>
     <state x="624" y="387" key="Vcs.Push.Dialog.v2/0.23.2048.1257@0.23.2048.1257" timestamp="1604192617228" />
+    <state x="723" y="260" width="602" height="783" key="find.popup" timestamp="1604246496141">
+      <screen x="0" y="23" width="2048" height="1257" />
+    </state>
+    <state x="723" y="260" width="602" height="783" key="find.popup/0.23.2048.1257@0.23.2048.1257" timestamp="1604246496141" />
   </component>
 </project>
