@@ -1,0 +1,30 @@
+@import "src/style/variables"
+
+
+.TaskColumn
+  display: flex
+  flex-direction: column
+  margin: 0 20px
+  width: 300px
+
+.TaskColumnHeader
+  display: flex
+  align-items: center
+  padding: 10px 0
+  background: $grey-bg
+  width: 100%
+  text-align: center
+  margin-bottom: 20px
+  border-radius: $border-radius-value $border-radius-value 0 0
+  color: $grey-foreground
+  h2
+    margin: 0 15px
+    font-size: 0.8rem
+
+.taskListContainer
+  background: $grey-bg
+  border-radius: $border-radius-value
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 5px

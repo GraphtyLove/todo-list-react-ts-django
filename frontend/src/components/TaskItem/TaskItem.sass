@@ -1,0 +1,42 @@
+@import "src/style/variables"
+
+.TaskItem
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  background: #fff
+  width: 100%
+  height: 90px
+  border-radius: $border-radius-value
+  margin-bottom: 10px
+  box-shadow: 0 0 2px -1px #7d869a
+
+  &:last-child
+    margin-bottom: 0
+
+  &:hover
+    background: $grey-bg
+
+  &>header, &>footer, &>main
+    margin: 0 10px
+  h3
+    font-size: 0.8rem
+    font-weight: normal
+  .epic
+    font-size: 0.6rem
+    font-weight: bold
+    background: $primary-light
+    color: $primary-dark
+    border-radius: 2px
+    padding: 3px 5px
+
+
+  .more-info
+    display: flex
+  footer img
+    height: 20px
+    width: auto
+    border-radius: 50%
+    margin-left: 10px
+
