@@ -14,22 +14,28 @@ interface TaskApiResponse {
 
 const TaskContainer = () => {
 
-    const data = useFetch<TaskApiResponse>('/api/tasks')
-
+    const tasks = useFetch<TaskApiResponse>('/api/tasks')
 
     const columnList = ['Backlog',  'Sprint', 'In progress', 'Stuck/Review', 'Done']
 
-    const filterData = (data: Array<Task>, status: string): Array<{}> => data.filter(task => task.state === status)
+    const filterData = (data: Array<Task>, status: string): Array<Task> => data.filter(task => task.state === status)
 
-    console.log(data)
+    console.log(tasks)
 
     return (
         <>
-        { data.isLoading && <p>LOADING...</p>}
-        { data.error && <p style={{color: 'red'}}>INTERNAL ERROR...</p> }
-        { !data.isLoading && !data.error && <>
+        { tasks.isLoading && <p>LOADING...</p>}
+        { tasks.error && <p style={{color: 'red'}}>INTERNAL ERROR...</p> }
+        { !tasks.isLoading && !tasks.error && <>
             <main className="TaskContainer">
-                { columnList.map(columnName => <TaskColumn title={columnName} taskCount={filterData(data.data, columnName).length}/> ) }
+                {
+                    columnList.map(columnName => {
+                        return <TaskColumn
+                            title={columnName}
+                            tasks={filterData(tasks.data, columnName)}
+                        />
+                    })
+                }
             </main>
         </> }
 
