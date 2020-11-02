@@ -1,31 +1,25 @@
 import React from 'react'
 
-
-const useFetch = (url: string, options?: RequestInit): [{}, boolean | string, boolean] => {
+function useFetch<T>(url: string, options?: RequestInit): T {
     const isMounted = React.useRef(true)
-    const [response, setResponse] = React.useState({})
+
+    const [data, setData] = React.useState([])
     const [error, setError] = React.useState(false)
-    const [isLoading, setIsLoading] = React.useState(false)
+    const [isLoading, setIsLoading] = React.useState(true)
+
+    console.log(`Fetch ${url}...`)
 
     React.useEffect(() => {
         if (isMounted.current) {
             if (!url) {
                 return
             }
-
-            setIsLoading(true)
-
             const fetchData = () => {
                 return fetch(url, options)
                     .then(res => res.json())
                     .then(jsonData => {
                         setIsLoading(false)
-                        setResponse({
-                            endPoint: url,
-                            status: 200,
-                            error: false,
-                            data: jsonData
-                        })
+                        setData(jsonData)
                     })
                     .catch(err => {
                         console.log(err)
@@ -41,7 +35,7 @@ const useFetch = (url: string, options?: RequestInit): [{}, boolean | string, bo
         }
     }, [url, options])
 
-    return [response, error, isLoading]
+    return {data, error, isLoading} as unknown as T
 }
 
 export default useFetch

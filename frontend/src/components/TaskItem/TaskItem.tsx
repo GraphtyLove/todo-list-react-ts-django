@@ -24,7 +24,7 @@ const TaskItem = ({ task }: TaskItemProps) => {
 
                 <section className="more-info">
                     <span className="priority-icon align-right">++</span>
-                    <span className="assignee-avatar"> <img src={task.assigneeAvatar} alt={task.assignee}/> </span>
+                    { task.assigneeAvatar && task.assignees && <span className="assignee-avatar"> <img src={task.assigneeAvatar[0]} /> </span>}
                 </section>
             </footer>
         </li>

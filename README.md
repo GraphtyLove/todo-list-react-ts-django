@@ -3,12 +3,12 @@
 ## What?
 A simple todo list with those features:
     * [ ] Epic system
-    * [ ] Assignee system
+    * [X] Assignee system
     * [ ] Collaborative
     * [ ] Secure Login system
-    * [ ] Database connected
+    * [X] Database connected
     * [ ] Drag & drop
-    * [ ] Tags system
+    * [X] Tags system
 
 
 ## State
@@ -18,14 +18,21 @@ There is hooks yet.
 
 Next steps:
 * [ ] Create needed hooks
-* [ ] Create modals with 
+    * [X] `useFetch`
+* [ ] Create modals with react portals
+* [ ] Check why `useFectch` is used 3 time at loading
+* Fix useFetch tests
 
 ### Backend
 The project only has been generated.
 
 Next steps:
-* [ ] Install additionnal dependencies and create the `requirements.txt`
-* [ ] Create the DB models
+* [X] Create the rest API
+* [ ] Replace author ID by author data in the API (serializers)
+* [ ] Replace assignees ID by assignees data in the API (serializers)
+* [ ] Replace namespace ID by namespace data in the API (serializers)
+* [ ] Replace labels ID by labels data in the API (serializers)
+* [ ] Add user's avatar to User model
 
 ## How?
 With this stack:
@@ -35,8 +42,6 @@ With this stack:
         * Typescript
     * Django with Django Rest Framework for the backend
     * MongoDB for the database
-    * [ ] GraphQL for the api?
-    * [ ] React Apollo
   
 ## Why?
 Just to practice and learn a new stack.
@@ -47,10 +52,7 @@ Main learning focus for this project:
     * React: `useCallback` hook
     * React: `useMemo` hook
     * React: `useContext` hook
-    * React: learn Apollo
-    * GraphQL
     * Usage of mongo in Django
     
 ## Who?
 Maxim Berge
-    

@@ -11,13 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23e044be-437f-4633-9202-14eb2eec9003" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/hooks/useFetch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/tests/hooks/useFetch.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaksContainer/TaskContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaksContainer/TaskContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskColumn/TaskColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskColumn/TaskColumn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskItem/TaskItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskItem/TaskItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/interfaces/Task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/interfaces/Task.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <updated>1604179966874</updated>
       <workItem from="1604179969412" duration="32721000" />
       <workItem from="1604275518302" duration="28000" />
-      <workItem from="1604275559206" duration="1951000" />
+      <workItem from="1604275559206" duration="10973000" />
     </task>
     <servers />
   </component>
@@ -107,10 +108,14 @@
       <screen x="0" y="23" width="2048" height="1257" />
     </state>
     <state x="624" y="387" key="Vcs.Push.Dialog.v2/0.23.2048.1257@0.23.2048.1257" timestamp="1604192617228" />
-    <state x="1214" y="290" width="1012" height="883" key="find.popup" timestamp="1604277471591">
+    <state x="1531" y="647" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604284381073">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state x="1214" y="290" width="1012" height="883" key="find.popup/-2560.23.2560.1417/0.23.3440.1417@0.23.3440.1417" timestamp="1604277471591" />
+    <state x="1531" y="647" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-2560.23.2560.1417/0.23.3440.1417@0.23.3440.1417" timestamp="1604284381073" />
+    <state x="1214" y="290" width="1012" height="883" key="find.popup" timestamp="1604279158721">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="1214" y="290" width="1012" height="883" key="find.popup/-2560.23.2560.1417/0.23.3440.1417@0.23.3440.1417" timestamp="1604279158721" />
     <state x="723" y="260" width="602" height="783" key="find.popup/0.23.2048.1257@0.23.2048.1257" timestamp="1604259102120" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1604273723621">
       <screen x="0" y="23" width="3440" height="1417" />
