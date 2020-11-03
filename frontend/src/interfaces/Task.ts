@@ -14,5 +14,6 @@ export interface Task {
     state: string,
     title: string,
     epic?: string,
+    detail: string
 }
 

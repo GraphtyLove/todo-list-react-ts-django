@@ -11,14 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23e044be-437f-4633-9202-14eb2eec9003" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaksContainer/TaskContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaksContainer/TaskContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskColumn/TaskColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskColumn/TaskColumn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskItem/TaskItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskItem/TaskItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/hooks/useFetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/interfaces/Task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/interfaces/Task.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/todo/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/todo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/todo/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/todo/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/todo/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/todo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/todo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/todo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,9 @@
       <updated>1604179966874</updated>
       <workItem from="1604179969412" duration="32721000" />
       <workItem from="1604275518302" duration="28000" />
-      <workItem from="1604275559206" duration="10973000" />
+      <workItem from="1604275559206" duration="11036000" />
+      <workItem from="1604312437590" duration="2197000" />
+      <workItem from="1604407423934" duration="627000" />
     </task>
     <servers />
   </component>

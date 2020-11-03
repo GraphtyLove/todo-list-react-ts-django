@@ -4,19 +4,16 @@ import TaskColumn from "../TaskColumn/TaskColumn";
 import { Task } from 'interfaces/Task'
 
 import './TaskContainer.sass'
-import useFetch from "../../hooks/useFetch";
-
-interface TaskApiResponse {
-    data: Task[],
-    error: boolean | string,
-    isLoading: boolean
-}
+import useFetchApi from "hooks/useFetch";
+import useJwt from "hooks/useJwt";
 
 const TaskContainer = () => {
 
-    const tasks = useFetch<TaskApiResponse>('/api/tasks')
+    const { accessToken } = useJwt()
 
-    const columnList = ['Backlog',  'Sprint', 'In progress', 'Stuck/Review', 'Done']
+    const tasks = useFetchApi ('/api/tasks', accessToken)
+
+    const columnList = ['Backlog', 'Sprint', 'In progress', 'Stuck/Review', 'Done']
 
     const filterData = (data: Array<Task>, status: string): Array<Task> => data.filter(task => task.state === status)
 
@@ -26,16 +23,15 @@ const TaskContainer = () => {
         <>
         { tasks.isLoading && <p>LOADING...</p>}
         { tasks.error && <p style={{color: 'red'}}>INTERNAL ERROR...</p> }
-        { !tasks.isLoading && !tasks.error && <>
+        { tasks.responseData.detail && <p>User not connected.</p> }
+
+        { tasks && !tasks.isLoading && !tasks.error && !tasks.responseData.detail && <>
             <main className="TaskContainer">
-                {
-                    columnList.map(columnName => {
-                        return <TaskColumn
+                { columnList.map(columnName => <TaskColumn
                             title={columnName}
-                            tasks={filterData(tasks.data, columnName)}
-                        />
-                    })
-                }
+                            tasks={filterData(tasks.responseData, columnName)}
+                            key={columnName}
+                        />) }
             </main>
         </> }
 

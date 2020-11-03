@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy":  "http://127.0.0.1:8000/",
+  "proxy": "http://127.0.0.1:8000/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -13,6 +13,7 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "fetch-mock": "^9.10.7",
+    "jwt-decode": "^3.0.0",
     "node-fetch": "^2.6.1",
     "node-sass": "4.14.1",
     "react": "^17.0.1",

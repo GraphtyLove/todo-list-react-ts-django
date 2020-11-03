@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import TaskColumnHeader from "./TaskColumnHeader";
 import TaskItem from "../TaskItem/TaskItem";
 import ButtonAddCard from "./ButtonAddCard/ButtonAddCard";
@@ -21,7 +21,7 @@ const TaskColumn = ({ title, tasks }: Props) => {
 
             <ul className="taskListContainer">
 
-                {tasks && tasks.map(task => <TaskItem task = {task} />)}
+                {tasks && tasks.map(task => <TaskItem task = {task} key={task.id} />)}
 
 
                 <ButtonAddCard />

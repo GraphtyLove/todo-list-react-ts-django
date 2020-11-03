@@ -2,3 +2,4 @@ env
 .DS_store
 .idea
 __pycache__
+.envrc
