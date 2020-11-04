@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import getTokenExpirationDate from "../auth/utils";
+import React, {SetStateAction, useEffect, useState} from "react"
+import getTokenExpirationDate from "../utils/jwt";
 
 interface JwtData {
     accessToken: string,
@@ -9,7 +9,7 @@ interface JwtData {
     error: boolean,
 }
 
-const useJwt = (): JwtData => {
+const useJwt = (): [JwtData, React.Dispatch<SetStateAction<JwtData>>] => {
     const [data, setData] = useState({
         accessToken: '',
         refreshToken: '',
@@ -99,7 +99,9 @@ const useJwt = (): JwtData => {
         })()
     }, [])
 
-    return data
+    return [data, setData]
 }
+
+
 
 export default useJwt

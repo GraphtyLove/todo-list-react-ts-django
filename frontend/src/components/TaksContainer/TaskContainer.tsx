@@ -9,7 +9,7 @@ import useJwt from "hooks/useJwt";
 
 const TaskContainer = () => {
 
-    const { accessToken } = useJwt()
+    const [{ accessToken, isLoading: jwtLoading }] = useJwt()
 
     const tasks = useFetchApi ('/api/tasks', accessToken)
 
@@ -21,11 +21,12 @@ const TaskContainer = () => {
 
     return (
         <>
-        { tasks.isLoading && <p>LOADING...</p>}
+        <h1>To do list</h1>
+        { (tasks.isLoading || jwtLoading) && <p>LOADING...</p>}
         { tasks.error && <p style={{color: 'red'}}>INTERNAL ERROR...</p> }
         { tasks.responseData.detail && <p>User not connected.</p> }
 
-        { tasks && !tasks.isLoading && !tasks.error && !tasks.responseData.detail && <>
+        { tasks && !tasks.isLoading && !jwtLoading && !tasks.error && !tasks.responseData.detail && <>
             <main className="TaskContainer">
                 { columnList.map(columnName => <TaskColumn
                             title={columnName}

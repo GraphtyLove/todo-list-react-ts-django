@@ -1,0 +1,156 @@
+body
+  margin: 0
+  font-family: 'Roboto', sans-serif
+
+
+
+.login-page
+  width: 100%
+  height: 100%
+  .blur
+    position: absolute
+    z-index: -1
+    background-image: url(./background.jpg)
+    background-position: center
+    background-size: cover
+    height: 100%
+    width: 100%
+
+  .global-container
+    display: flex
+    flex-direction: column
+    height: 100vh
+
+  main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 90%
+
+  #login-form
+    background: #fff
+    width: 400px
+    height: 370px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    -webkit-box-shadow: 6px 10px 8px -1px rgba(0,0,0,0.24)
+    -moz-box-shadow: 6px 10px 8px -1px rgba(0,0,0,0.24)
+    box-shadow: 6px 10px 8px -1px rgba(0,0,0,0.24)
+
+  .form-header
+    border-bottom: auto
+    background: #8e1aef
+    color: #fff
+    text-align: center
+    width: 100%
+    font-size: 1.2rem
+    padding: 10px 0
+
+  h1
+    font-size: 1.5rem
+    font-weight: normal
+    letter-spacing: 4px
+
+
+  .form-main
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+  .form-txt-input-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 80%
+    margin-top: auto
+    margin-bottom: auto
+
+
+  .form-control
+    height: 50px
+    font-size: 1.15rem
+    width: 70%
+    border-style: none
+    margin-left: 10px
+
+  .form-control:focus
+    outline: none
+
+  #password
+    font-size: 2rem
+
+  .txt-container
+    width: 100%
+    display: flex
+    align-items: center
+
+  .txt-container:hover
+    color: #8e1aef
+
+  .username-container
+    border-bottom: 2px solid #a5aac7
+    margin-bottom: 5px
+    padding-bottom: 5px
+
+  .form-submit-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 115%
+    height: 60px
+
+  .submit-button
+    background: #8e1aef
+    border: none
+    color: #fff
+    font-size: 1.5rem
+    align-self: center
+    font-weight: bold
+    cursor: pointer
+    transition: 0.3s
+    width: 100%
+    height: 100%
+  .ribbon
+    position: relative
+    width: 100%
+    height: 100%
+
+  .ribbon:before, .ribbon:after
+    background-color: #4f008f
+    width: 10px
+    height: 32px
+    content: ''
+    transform: skewY(20deg)
+    position: absolute
+    z-index: -1
+    border: 10px solid #7300d1
+    -webkit-box-shadow: 6px 10px 8px -1px rgba(0,0,0,0.24)
+    -moz-box-shadow: 6px 10px 8px -1px rgba(0,0,0,0.24)
+    box-shadow: 6px 10px 8px -1px rgba(0,0,0,0.24)
+
+  .ribbon:before
+    top: 13px
+    left: 0
+  .ribbon:after
+    top: 13px
+    right: 0
+    transform: skewY(-20deg)
+
+  .form-footer
+    margin-top: 10px
+    margin-bottom: 15px
+    font-size: 0.8rem
+    color: #a5aac7
+
+  p
+    margin: 0
+
+  a
+    color: #a5aac7

@@ -1,23 +1,27 @@
 import React from 'react'
 import './App.sass'
+import useJwt from "hooks/useJwt"
+
 import TaskContainer from "components/TaksContainer/TaskContainer"
-import useJwt from "hooks/useJwt";
+import Login from "components/Login/Login";
 
 
 function App() {
 
-    const { isLogged } = useJwt()
-
-    if (!isLogged){
-        console.log('login...')
+    const [{ isLogged, isLoading }, setData] = useJwt()
+    const logout = () => {
+        console.log('log out...')
+        localStorage.clear()
+        setData(value => ({...value, isLogged: false}))
     }
 
     return (
         <div className="App">
-            <h1>To do list</h1>
-            <TaskContainer />
+            {isLogged && <button onClick={logout}>Log out</button>}
+            {!isLogged && !isLoading && <Login setData={setData} />}
+            {isLogged &&  <TaskContainer />}
         </div>
-    );
+    )
 }
 
 export default App
